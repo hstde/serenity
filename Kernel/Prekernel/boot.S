@@ -279,6 +279,7 @@ real_mode:
     int $0x10
 
     movb $0x13, %ah
+    movb $0x01, %al
     movb $0x0, %bh
     movb $0xf, %bl
     movw (COPIED_STRING_LOCATION), %cx
